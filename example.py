@@ -1,7 +1,3 @@
-# sqlite3-numpy
-Store numpy vectors in sqlite3 database using Python
-
-```python
 import sqlite3
 from scipy.spatial.distance import cdist
 import numpy as np
@@ -44,4 +40,4 @@ if __name__ == '__main__':
         print(cdist(vectors[:1], vectors[1:], metric='cosine')[0])
 
         cur.close()
-```
+
